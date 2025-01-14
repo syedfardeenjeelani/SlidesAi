@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [scrolled, setScrolled] = useState(false);
 
   const navItems: any = {
     Feature: ["Analytics", "Automation", "Collaboration", "Security"],
@@ -12,10 +13,27 @@ const Navbar = () => {
     Company: ["About", "Careers", "Press", "Contact"],
   }; 
 
-  
+
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    useEffect(() => { 
+      window.addEventListener("scroll", handleScroll); 
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+
 
   return (
-    <div className="md:py-[20px]  border-b border-b-[#1C0B451A] fixed bg-transparent w-full ">
+    <div
+      className={`md:py-[20px]  border-b border-b-[#1C0B451A] fixed ${scrolled ? "bg-white z-[100]" : "bg-transparent"} w-full `}
+    >
       <div className="lg:w-[79.1vw] md:flex hidden w-[95vw] h-[40px]  justify-between mx-auto items-center  ">
         <div className=" md:block hidden text-[#121B26] text-[18px] font-semibold leading-[30px] ">
           SuperMetrics.com
