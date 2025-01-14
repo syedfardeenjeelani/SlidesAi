@@ -2,13 +2,74 @@
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero'
 import EmptySpace from '../components/EmptySpace'
+import Wrapper from '../components/Wrapper'
+import BetaLogo from '../assets/629f3dd057cea98189faf8d7_beta 1.svg'
+import IncusLogo from '../assets/629f3dd45b613f80178ea16d_Incus_Logo_v3_With_Slogan 1 1.svg'
+import UniverseLogo from '../assets/629f3dd163f3e26c0e16f062_universe 1.svg'
+import BlueSpreadLogo from '../assets/629f3dd2d3fd7317cf83a739_BlueSpec 1.svg'
+import ContainerLogo from '../assets/629f3dd5de258632955dbdb6_Container 1.svg'
+import googleWorkspace from '../assets/googleWorkspace.svg'
+import UncleLogo from '../assets/629f3dd60624ac26df9da6eb_Uncle 1.svg'
+import leftRightBg from '../assets/LeftRightbg.svg'
+import Frame from '../assets/Frame 1739327327.svg'
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 
+
 <Layout>
 	<Hero />
-	<!-- <EmptySpace /> -->
+	<Wrapper one={true} two={true} three={true} four={true} height="h-[284px] lg:mt-0 lg:mb-0 mb-[0px] mt-[75px] " >
+		<div class="flex  flex-col  gap-[32px] py-[80px] items-center">
+             <span class="text-[#697586] sm:text-[20px] text-center " >Trusted by 5000+ marketing professionals</span>
+         <div class="flex overflow-y-auto lg:overflow-hidden   max-h-[60px] lg:flex-row flex-col justify-center lg:justify-normal " >
+			<div class="sm:w-[203.17px] flex justify-center items-center  h-[62px] ">
+     <img class="w-[84px] h-[81px] " src={BetaLogo.src} alt="">
+			</div>
+			<div class="sm:w-[203.17px] flex justify-center items-center h-[62px] ">
+     <img class="w-[84px] h-[81px] " src={IncusLogo.src} alt="">
+			</div>
+			<div class="sm:w-[203.17px] flex justify-center items-center h-[62px] ">
+     <img class="w-[84px] h-[81px] " src={UniverseLogo.src} alt="">
+			</div>
+			<div class="sm:w-[203.17px] flex justify-center items-center h-[62px] ">
+     <img class="w-[84px] h-[81px] " src={BlueSpreadLogo.src} alt="">
+			</div>
+			<div class="sm:w-[203.17px] flex justify-center items-center h-[62px] ">
+     <img class="w-[84px] h-[81px] " src={UncleLogo.src} alt="">
+			</div>
+			<div class="sm:w-[203.17px] flex justify-center items-center h-[62px] ">
+     <img class="w-[84px] h-[81px] " src={ContainerLogo.src} alt="">
+			</div>
+		 </div>
+		</div>
+	</Wrapper>
+	<Wrapper  one={false}  three={true} onePosition={true} threePosition={true}  height="h-[547px] bg-gradient-to-b from-[#F5F7FA] to-[#FFFFFF] " >
+<div class="flex  relative flex-col justify-center items-center">
+  <div class="w-[602px] h-[110px] text-[#212F40] text-[40px] leading-[55px] text-center mb-[23px] mt-[80px] ">
+Access all your marketing data without leaving
+  </div>
+    <img class="w-[399px] h-[52px] mb-[50px] " src={googleWorkspace.src} alt="">
+	<img src={leftRightBg.src} class="absolute z-0  top-[35vh]" alt="">
+	<img src={Frame.src}  class="z-30"/>
+</div>
+	</Wrapper>
+	<Wrapper four={true} one={true} three={true} height="h-[547px]" >
+
+	</Wrapper>
+	<Wrapper  one={false}  three={true} onePosition={true} threePosition={true}  height="h-[547px]" >
+
+	</Wrapper>
+	<Wrapper  four={true} one={true} three={true} height="h-[547px]" >
+
+	</Wrapper>
+		<Wrapper   one={false}  three={true} onePosition={true} threePosition={true}  height="h-[547px]" >
+
+	</Wrapper>
+		<Wrapper  four={true} one={true} three={true} height="h-[547px]" >
+
+	</Wrapper>
+	<EmptySpace />
 </Layout>

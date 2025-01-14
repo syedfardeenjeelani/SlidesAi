@@ -1,26 +1,16 @@
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const svg = (
-    <svg
-      width="12"
-      height="8"
-      viewBox="0 0 12 8"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M1 1.5L6 6.5L11 1.5"
-        stroke="#42526B"
-        stroke-width="1.66667"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  );
+  const [activeDropdown, setActiveDropdown] = useState(null);
+
+  const navItems: any = {
+    Feature: ["Analytics", "Automation", "Collaboration", "Security"],
+    Resources: ["Documentation", "Guides", "Tutorials", "Blog"],
+    Company: ["About", "Careers", "Press", "Contact"],
+  }; 
   return (
     <div className="md:py-[20px]  border-b border-b-[#1C0B451A] fixed bg-transparent w-full ">
       <div className="lg:w-[79.1vw] md:flex hidden w-[95vw] h-[40px]  justify-between mx-auto items-center  ">
@@ -28,11 +18,49 @@ const Navbar = () => {
           SuperMetrics.com
         </div>
         <div className="md:block hidden">
-          <ul className=" flex text-[#42526B] font-semibold text-[14px]  gap-[32px] ">
-            <li className=" h-6 flex gap-2 items-center ">Feature {svg}</li>
-            <li className=" h-6 flex gap-2 items-center ">Resources {svg}</li>
-            <li className=" h-6 flex gap-2 items-center ">Company {svg}</li>
-            <li className=" h-6 flex gap-2 items-center "> Pricing</li>
+          <ul className="flex text-[#42526B] font-semibold text-[14px] gap-[32px]">
+            {Object.keys(navItems).map((item: any) => (
+              <li
+                key={item}
+                className="relative cursor-pointer h-6 flex gap-2 items-center"
+                onClick={() =>
+                  activeDropdown === item
+                    ? setActiveDropdown(null)
+                    : setActiveDropdown(item)
+                }
+              >
+                {item}
+                {activeDropdown === item ? (
+                  <ChevronDown className="w-4 h-4 rotate-180 transition-transform duration-300" />
+                ) : (
+                  <ChevronDown className="w-4 h-4 rotate-0 transition-transform duration-300" />
+                )}
+                <AnimatePresence>
+                  {activeDropdown === item && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 10 }}
+                      transition={{ duration: 0.2 }}
+                      className="absolute top-7 left-0 bg-white rounded-lg shadow-lg min-w-[160px] py-2 z-50"
+                    >
+                      {navItems[item].map((subItem: any) => (
+                        <a
+                          key={subItem}
+                          href="#"
+                          className="block px-4 py-2 hover:bg-gray-50 text-[#42526B]"
+                        >
+                          {subItem}
+                        </a>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </li>
+            ))}
+            <li className="cursor-pointer h-6 flex gap-2 items-center">
+              Pricing
+            </li>
           </ul>
         </div>
         <div className=" w-[168px] md:flex hidden gap-[12px] h-[40px] ">

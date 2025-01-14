@@ -5256,9 +5256,9 @@ const Hero = () => {
       {/* to fix the empty space */}
       <div className=" flex items-center  justify-center lg:flex-row flex-col-reverse  lg:gap-[83px] h-[100vh] ">
         {/* <div className='  -[pink-600] h-[423.98px] w-[727px] rounded-[7.19px]   blur-[23.95px] '></div> */}
-        <div className=" lg:w-[727px] h-[487.89px]  -red-900 flex w-[100%] justify-center items-center ">
-          <div className="  -pink-800 flex flex-col justify-between lg:w-[627px] w-[95%] lg:h-[354px]  ">
-            <div className=" flex flex-col gap-3 lg:gap-[24px] -red-900 w-full h-[262px] ">
+        <div className=" lg:w-[727px] h-[487.89px]  flex w-[100%] justify-center items-center ">
+          <div className=" flex flex-col justify-between lg:w-[627px] w-[95%] lg:h-[354px]  ">
+            <div className=" flex flex-col gap-3 lg:gap-[24px]  w-full  h-[220px] lg:h-[262px] ">
               <div className="lg:w-[617px] lg:flex text-center lg:text-left  lg:relative lg:h-[148px]">
                 <span className=" lg:text-[56px] text-[20px]  sm:text-[35px]   bg-gradient-to-b from-[#0D314F] to-[#165182] text-transparent bg-clip-text leading-4  lg:leading-[74px] font-semibold tracking-[-3%]">
                   Sync Your Marketing Data to
@@ -5273,7 +5273,7 @@ const Hero = () => {
                 <p>Sheets, Slides, and everywhere else.</p>
               </div>
             </div>
-            <div className=" lg:w-[399px] lg:flex-row lg:items-start items-center flex-col lg:h-[52px]  -green-700 flex gap-[16px] ">
+            <div className=" lg:w-[399px] lg:flex-row lg:items-start items-center flex-col lg:h-[52px]   flex gap-[16px] ">
               <button className=" font-semibold -[#1B91F0]  w-[140px] rounded-[12px] h-[40px] lg:w-[172px] lg:h-[52px] bg-[#1B91F0] text-[#ffffff] flex items-center justify-center gap-2 ">
                 Install Now
                 {installNowSvg}
