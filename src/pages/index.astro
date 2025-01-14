@@ -12,6 +12,7 @@ import googleWorkspace from '../assets/googleWorkspace.svg'
 import UncleLogo from '../assets/629f3dd60624ac26df9da6eb_Uncle 1.svg'
 import leftRightBg from '../assets/LeftRightbg.svg'
 import Frame from '../assets/Frame 1739327327.svg'
+import blur from '../assets/blur.svg'
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -46,17 +47,24 @@ import Frame from '../assets/Frame 1739327327.svg'
 		 </div>
 		</div>
 	</Wrapper>
-	<Wrapper  one={false}  three={true} onePosition={true} threePosition={true}  height="h-[547px] bg-gradient-to-b from-[#F5F7FA] to-[#FFFFFF] " >
-<div class="flex  relative flex-col justify-center items-center">
-  <div class="w-[602px] h-[110px] text-[#212F40] text-[40px] leading-[55px] text-center mb-[23px] mt-[80px] ">
+	<Wrapper  one={false}  three={true} onePosition={true} threePosition={true}  height="lg:h-[547px]  bg-[linear-gradient(180deg,#F5F7FA_0%,#FFFFFF_33.41%,#FFFFFF_66.59%,#FFFFFF_100%)] " >
+<div class="flex   relative flex-col justify-center items-center">
+  <div class="lg:w-[602px] lg:h-[110px] text-[#212F40] text-[25px] lg:text-[40px] lg:leading-[55px] mt-[15px] text-center mb-[23px] lg:mt-[80px] ">
 Access all your marketing data without leaving
   </div>
     <img class="w-[399px] h-[52px] mb-[50px] " src={googleWorkspace.src} alt="">
 	<img src={leftRightBg.src} class="absolute z-0  top-[35vh]" alt="">
 	<img src={Frame.src}  class="z-30"/>
+	<img class="absolute z-40 bottom-0" src={blur.src} alt="">
 </div>
 	</Wrapper>
-	<Wrapper four={true} one={true} three={true} height="h-[547px]" >
+	<Wrapper four={true} one={true} three={true} height="h-[80px]" >
+		<div class="flex text-[#697586] font-bold gap-[24px] w-[426px] mx-auto  items-center h-[80px]  ">
+<div class=" [word-spacing:0.5rem]" > 
+	Looking for <span class="text-[#212F40] text-[20px] font-bold " >DataStudio?</span>
+</div>
+<button class="w-[126px] h-[42px] border-[#CFD5DE] border rounded-[12px] text-[#212F40] font-semibold ">Check it out</button>
+		</div>
 
 	</Wrapper>
 	<Wrapper  one={false}  three={true} onePosition={true} threePosition={true}  height="h-[547px]" >

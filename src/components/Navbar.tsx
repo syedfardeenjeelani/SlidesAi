@@ -11,6 +11,9 @@ const Navbar = () => {
     Resources: ["Documentation", "Guides", "Tutorials", "Blog"],
     Company: ["About", "Careers", "Press", "Contact"],
   }; 
+
+  
+
   return (
     <div className="md:py-[20px]  border-b border-b-[#1C0B451A] fixed bg-transparent w-full ">
       <div className="lg:w-[79.1vw] md:flex hidden w-[95vw] h-[40px]  justify-between mx-auto items-center  ">

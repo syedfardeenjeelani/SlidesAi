@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"; 
 
 const Hero = () => {
   const svg = (
@@ -5225,6 +5225,31 @@ const Hero = () => {
     </svg>
   );
 
+  const blur = (
+    <svg
+      width={641}
+      height={361}
+      viewBox="0 0 641 361"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width={641} height={362} fill="url(#paint0_linear_1_1205)" />
+      <defs>
+        <linearGradient
+          id="paint0_linear_1_1205"
+          x1="320.5"
+          y1="91.5"
+          x2="320.5"
+          y2={291}
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="white" stopOpacity={0} />
+          <stop offset={1} stopColor="white" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+
   const installNowSvg = (
     <svg
       width={25}
@@ -5284,7 +5309,10 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className=" ">{svg}</div>
+        <div className="relative">
+          {svg}
+         <span className="absolute bottom-0" > {blur}</span>
+        </div>
       </div>
     </div>
   );
