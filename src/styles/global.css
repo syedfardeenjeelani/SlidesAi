@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  @apply font-geist; /* Applies the Geist font globally */
+}
+
+
+/* body { */
+  /* font-family: 'Geist', sans-serif;
+} */
