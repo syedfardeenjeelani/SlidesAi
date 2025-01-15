@@ -11,6 +11,23 @@ const Cards = () => {
         text: "Get Started for Free",
         style: "default",
       },
+      featureIcon: (
+        <svg
+          width={20}
+          height={21}
+          viewBox="0 0 20 21"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.6667 5.23047L7.49999 14.3971L3.33333 10.2305"
+            stroke="#F17878"
+            strokeWidth="2.46154"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      ),
       features: [
         "Data Sources: Up to 3 Accounts",
         "1 Workspace",
@@ -128,6 +145,23 @@ const Cards = () => {
         text: "Get Starter",
         style: "primary",
       },
+      featureIcon: (
+        <svg
+          width={20}
+          height={21}
+          viewBox="0 0 20 21"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.4102 5.69238L7.38461 14.718L3.28204 10.6155"
+            stroke="#1B91F0"
+            strokeWidth="2.46154"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      ),
       features: [
         "Data Sources: Up to 10 Accounts",
         "1 Workspace",
@@ -259,6 +293,23 @@ const Cards = () => {
         text: "Get Professional",
         style: "default",
       },
+      featureIcon: (
+        <svg
+          width={20}
+          height={21}
+          viewBox="0 0 20 21"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.6666 5.23047L7.49998 14.3971L3.33331 10.2305"
+            stroke="#F6B51E"
+            strokeWidth="2.46154"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      ),
       features: [
         "Data Sources: Up to 3 Accounts",
         "1 Workspace",
@@ -397,6 +448,23 @@ const Cards = () => {
         text: "Get Team",
         style: "default",
       },
+      featureIcon: (
+        <svg
+          width={20}
+          height={21}
+          viewBox="0 0 20 21"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.6667 5.23047L7.50004 14.3971L3.33337 10.2305"
+            stroke="#7F56D9"
+            strokeWidth="2.46154"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      ),
       features: [
         "Data Sources: Up to 3 Accounts",
         "1 Workspace",
@@ -584,18 +652,58 @@ const Cards = () => {
                   className=" h-[4px] absolute top-[-0.8px] left-[0.4vw]  w-[95.5%] rounded-tr-[14.85px] rounded-tl-[14.85px] "
                 ></div>
               )}
-              {el.icon}
+              <div className="flex justify-between">
+                {el.icon}
+                {el.badge && (
+                  <span
+                    style={{
+                      background:
+                        "linear-gradient(180deg, #39A3F7 0%, #3B8BCB 100%)",
+                    }}
+                    className=" w-[96px] h-[28px] rounded-[16px] text-xs font-medium text-white animate-bounce flex items-center justify-center  "
+                  >
+                    {el.badge}
+                  </span>
+                )}
+              </div>
               <h1 className="text-[#121B26] font-bold text-[20px] mb-[4px]  ">
                 {el.plan}
               </h1>
               <p className=" text-[#697586] text-[14px] leading-[22px] w-[222px] mb-[20px] ">
                 {el.description}
               </p>
-              <div className=" text-[#121B26] font-bold text-[30px] ">
+              <div className=" text-[#121B26] font-bold text-[30px] mb-[16px]">
                 ${el.price}
                 <span className="text-[#697586] text-[14px] ">
                   {isYearly ? " /year" : " /month"}
                 </span>
+              </div>
+              <button className=" w-[256px] rounded-[12.32px] h-[56px] hover:border-[1px] font-semibold border-[1.23px] border-[#1B91F0] hover:text-white text-[#1B91F0] hover:bg-[#1B91F0] ">
+                {el.button.text}
+              </button>
+              {/* <div className=" w-[251px] h-[218px] flex flex-col gap-3 ">
+                <span className=" text-[#697586] font-semibold ">Features</span>
+                <div className=" flex flex-col  h-[22px] w-[269px] gap-[10px] border border-red-800 ">
+                  <div className="flex gap-[10px] ">
+                    <div>
+                      {el.featureIcon}
+                    </div>
+                      <span className=" text-[#697586] text-sm">
+                        {el.features}
+                      </span>
+                  </div>
+                </div>
+              </div> */}
+              <div className="w-[251px] mt-[26px] h-[218px] flex flex-col gap-3">
+                <span className="text-[#697586] font-semibold">Features</span>
+                <div className="flex flex-col gap-[10px]">
+                  {el.features.map((feature, index) => (
+                    <div key={index} className="flex gap-[10px] items-start">
+                      <div className="flex-shrink-0">{el.featureIcon}</div>
+                      <span className="text-[#697586] text-sm">{feature}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           );
