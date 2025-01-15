@@ -36,7 +36,7 @@ const Gap = () => {
     );
   return (
     <div className="flex h-[191px]  justify-center   items-center">
-      <div className=" lg:w-[844px]  flex  gap-[20px] items-center ">
+      <div className=" lg:w-[854px]  flex  gap-[20px] items-center ">
         <div className="relative">
           <span className=" w-[12px] absolute border-[#CFD5DE] border-[0.7px]  top-[-6px] z-50  h-[12px] bg-white rounded-[4px] "></span>
           <div className=" lg:w-[350px] w-[150px] border-[0.7px] border-[#CFD5DE] "></div>

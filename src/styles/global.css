@@ -5,11 +5,5 @@
 
 
 body{
-  @apply font-geist; /* Applies the Geist font globally */
-  
+  @apply font-geist;
 }
-
-
-/* body { */
-  /* font-family: 'Geist', sans-serif;
-} */

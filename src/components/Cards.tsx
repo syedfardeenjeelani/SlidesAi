@@ -630,7 +630,7 @@ const Cards = () => {
           </div>
         </div>
       </div>
-      <div className="flex  mb-[16px] gap-[16px] ">
+      <div className="flex lg:flex-row flex-col  mb-[16px] gap-[16px] ">
         {cardsData.map((el, index) => {
           return (
             <div
