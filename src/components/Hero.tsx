@@ -4,7 +4,7 @@ const Hero = () => {
   const svg = (
     <svg 
       viewBox="0 0 628 490"
-      className=" lg:w-[628px] w-[80%] h-[80%] lg:h-[490px] "
+      className=" lg:w-[628px] w-[90%] h-[90%] lg:h-[490px] "
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -5229,6 +5229,7 @@ const Hero = () => {
     <svg
       width={641}
       height={361}
+      className=" sm:w-[641px] w-full h-full sm:flex hidden sm:h-[361px]  "
       viewBox="0 0 641 361"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -5277,9 +5278,9 @@ const Hero = () => {
       }}
     >
       {/* to fix the empty space */}
-      <div className="  pt-[24vh]  lg:pt-[11.6vh]"></div>
+      <div className="  pt-[18vh]  lg:pt-[11.6vh]"></div>
       {/* to fix the empty space */}
-      <div className=" flex items-center  justify-center lg:flex-row flex-col-reverse  lg:gap-[83px] h-[100vh] ">
+      <div className=" flex items-center  justify-center lg:flex-row flex-col-reverse  lg:gap-[83px] h-[80vh] sm:h-[100vh] ">
         {/* <div className='  -[pink-600] h-[423.98px] w-[727px] rounded-[7.19px]   blur-[23.95px] '></div> */}
         <div className=" lg:w-[727px] h-[487.89px]  flex w-[100%] justify-center items-center ">
           <div className=" flex flex-col justify-between lg:w-[627px] w-[95%] lg:h-[354px]  ">

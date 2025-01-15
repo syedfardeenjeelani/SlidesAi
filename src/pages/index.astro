@@ -2,7 +2,9 @@
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero'
 import EmptySpace from '../components/EmptySpace'
+import Gap from '../components/Gap'
 import Wrapper from '../components/Wrapper'
+import Cards from '../components/Cards'
 import BetaLogo from '../assets/629f3dd057cea98189faf8d7_beta 1.svg'
 import IncusLogo from '../assets/629f3dd45b613f80178ea16d_Incus_Logo_v3_With_Slogan 1 1.svg'
 import UniverseLogo from '../assets/629f3dd163f3e26c0e16f062_universe 1.svg'
@@ -13,7 +15,11 @@ import UncleLogo from '../assets/629f3dd60624ac26df9da6eb_Uncle 1.svg'
 import leftRightBg from '../assets/LeftRightbg.svg'
 import Frame from '../assets/Frame 1739327327.svg'
 import blur from '../assets/blur.svg'
-
+import getStarted1 from '../assets/getStarted1.svg'
+import getStarted2 from '../assets/getStarted2.svg'
+import getStarted3 from '../assets/getStarted3.svg'
+import line1 from '../assets/line1.svg'
+import line3 from '../assets/line3.svg'
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -47,37 +53,105 @@ import blur from '../assets/blur.svg'
 		 </div>
 		</div>
 	</Wrapper>
-	<Wrapper  one={false}  three={true} onePosition={true} threePosition={true}  height="lg:h-[547px]  bg-[linear-gradient(180deg,#F5F7FA_0%,#FFFFFF_33.41%,#FFFFFF_66.59%,#FFFFFF_100%)] " >
-<div class="flex   relative flex-col justify-center items-center">
-  <div class="lg:w-[602px] lg:h-[110px] text-[#212F40] text-[25px] lg:text-[40px] lg:leading-[55px] mt-[15px] text-center mb-[23px] lg:mt-[80px] ">
+	<Wrapper  one={false}  three={true} onePosition={true} threePosition={true}  height="lg:h-[547px] h-[300px]  bg-[linear-gradient(180deg,#F5F7FA_0%,#FFFFFF_33.41%,#FFFFFF_66.59%,#FFFFFF_100%)] " >
+<div class="flex px-2 lg:px-0  sm:relative flex-col justify-center items-center">
+  <div class="lg:w-[602px] lg:h-[110px]  text-[#212F40] text-[25px] lg:text-[40px] lg:leading-[55px] mt-[15px] text-center mb-[23px] lg:mt-[80px] ">
 Access all your marketing data without leaving
   </div>
-    <img class="w-[399px] h-[52px] mb-[50px] " src={googleWorkspace.src} alt="">
-	<img src={leftRightBg.src} class="absolute z-0  top-[35vh]" alt="">
-	<img src={Frame.src}  class="z-30"/>
-	<img class="absolute z-40 bottom-0" src={blur.src} alt="">
+    <img class="w-[399px] h-[52px]  mb-[25px] sm:mb-[50px] " src={googleWorkspace.src} alt="">
+	<img src={leftRightBg.src} class="sm:absolute z-0 sm:flex hidden sm:top-[35vh]" alt="">
+	<img src={Frame.src}  class="z-30  sm:flex hidden"/>
+	<img class="sm:absolute   z-40  sm:flex hidden bottom-0" src={blur.src} alt="">
 </div>
 	</Wrapper>
-	<Wrapper four={true} one={true} three={true} height="h-[80px]" >
-		<div class="flex text-[#697586] font-bold gap-[24px] w-[426px] mx-auto  items-center h-[80px]  ">
-<div class=" [word-spacing:0.5rem]" > 
-	Looking for <span class="text-[#212F40] text-[20px] font-bold " >DataStudio?</span>
-</div>
-<button class="w-[126px] h-[42px] border-[#CFD5DE] border rounded-[12px] text-[#212F40] font-semibold ">Check it out</button>
+	<Wrapper four={true} one={true} three={true} height="sm:h-[80px] h-[210px]" >
+		<div class="sm:h-0 h-[210px] sm:block flex items-center " >
+			<div class="flex gap-4 text-[#697586] font-bold sm:gap-[24px]  text-center sm:text-left sm:flex-row flex-col sm:w-[426px] mx-auto sm:justify-normal justify-center  items-center h-[80px]  ">
+	<div class=" [word-spacing:0.5rem]" > 
+		Looking for <span class="text-[#212F40] sm:text-[20px] font-bold " >DataStudio?</span>
+	</div>
+	<button class="w-[126px] h-[42px] border-[#CFD5DE] border rounded-[12px] text-[#212F40] font-semibold ">Check it out</button>
+			</div>
+
 		</div>
 
 	</Wrapper>
-	<Wrapper  one={false}  three={true} onePosition={true} threePosition={true}  height="h-[547px]" >
-
+	 <Wrapper  one={true}  three={true}  onePosition={true} threePosition={true}  height="h-[1705px]" >
+        <div class="flex flex-col px-2 lg:px-0 items-center">
+			<div class="lg:my-[80px] my-[88px] flex justify-between items-center flex-col text-center">
+				<span  style={{
+        background: 'linear-gradient(180deg, #E9ECF0 0%, rgba(233, 236, 240, 0) 67.88%)'
+      }} class=" w-[145px]  p-[6px] h-[44px] rounded-[1230px] " >
+				<button class="w-[133px] bg-[#FFFFFF] h-[32px] border rounded-[130px] text-[#697586] text-[14px] border-[#CFD5DE] " >How it works</button>
+				</span>
+				<span class=" text-[#212F40] font-semibold text-[20px] lg:text-[40px] " >
+					Get Started in 3 Simple Steps
+				</span>
+			</div>
+			<div class=" lg:w-[1048px] flex flex-col lg:flex-row lg:items-start items-center lg:justify-between  lg:h-[342px] mx-auto ">
+<img src={getStarted1.src} alt="">
+<div class=" lg:w-[410px] h-[320px] lg:h-[230px] lg:items-start items-center flex flex-col" >
+<span class="bg-clip-text text-transparent font-extrabold text-[40px] lg:text-[94px] " style={{
+        background: 'linear-gradient(180deg, rgba(207, 213, 222, 0.5) 0%, rgba(207, 213, 222, 0) 81.77%)',
+        WebkitBackgroundClip: 'text'
+      }} 
+ >01</span>	
+<span class=" text-[#212F40] text-center lg:text-left text-[20px] font-semibold " >Install SuperMetrics and create an <br/> account</span>
+<span class="mt-[6px] lg:text-left text-center text-[#344054]  leading-[26px]  " >Installation is quick, and creating a SuperMetrics account is completely free.</span>
+</div>
+			</div>
+			<img class=" hidden lg:flex" src={line1.src} alt="">
+			<div class=" lg:w-[1048px] flex flex-col lg:flex-row-reverse justify-between lg:h-[342px] mx-auto ">
+<img src={getStarted2.src} alt="">
+<div class=" lg:w-[410px] lg:h-[230px] h-[320px] lg:items-start items-center flex flex-col" >
+<span class="bg-clip-text text-transparent font-extrabold text-[40px] lg:text-[94px] " style={{
+        background: 'linear-gradient(180deg, rgba(207, 213, 222, 0.5) 0%, rgba(207, 213, 222, 0) 81.77%)',
+        WebkitBackgroundClip: 'text'
+      }} 
+ >02</span>	
+<span class=" text-[#212F40] lg:text-left text-center text-[20px] font-semibold " >Connect your marketing accounts to <br/>SuperMetrics</span>
+<span class="mt-[6px] text-[#344054] lg:text-left text-center  leading-[26px]  " >Link your accounts to track campaigns and manage channels from one dashboard.</span>
+</div>
+			</div>
+			<img  class="lg:flex hidden" src={line3.src} alt="">
+			<div class=" lg:w-[1048px] flex lg:flex-row flex-col  justify-between lg:h-[342px] mx-auto ">
+<img src={getStarted3.src} alt="">
+<div class=" lg:w-[410px] lg:h-[230px] h-[320px] lg:items-start items-center flex flex-col" >
+<span class="bg-clip-text text-transparent font-extrabold text-[40px] lg:text-[94px] " style={{
+        background: 'linear-gradient(180deg, rgba(207, 213, 222, 0.5) 0%, rgba(207, 213, 222, 0) 81.77%)',
+        WebkitBackgroundClip: 'text'
+      }} 
+ >03</span>	
+<span class=" text-[#212F40] lg:text-left text-center text-[20px] font-semibold " >Sync data directly to Google Sheets and<br/> Slides</span>
+<span class="mt-[6px] text-[#344054]  leading-[26px] lg:text-left text-center " >Easily access and integrate your data into documents and presentations.</span>
+</div>
+			</div>
+		</div>
 	</Wrapper>
-	<Wrapper  four={true} one={true} three={true} height="h-[547px]" >
+	
+	 <Gap />
 
+	
+	<Wrapper  four={true} two={true} one={true} three={true} height="h-[547px]" >
+<div class="flex flex-col px-2 lg:px-0 items-center">
+			<div class="lg:my-[80px] my-[88px] flex justify-between items-center flex-col text-center">
+				<span  style={{
+        background: 'linear-gradient(180deg, #E9ECF0 0%, rgba(233, 236, 240, 0) 67.88%)'
+      }} class=" w-[103px]  p-[6px] h-[44px] rounded-[1230px] " >
+				<button class="w-[91px] bg-[#FFFFFF] h-[32px] border rounded-[130px] text-[#697586] text-[14px] border-[#CFD5DE] " >Pricing</button>
+				</span>
+				<span class=" text-[#212F40] font-semibold text-[20px] lg:text-[40px] " >
+					Get Started in 3 Simple Steps
+				</span>
+			</div> 
+			<Cards />
+			</div>
 	</Wrapper>
-		<Wrapper   one={false}  three={true} onePosition={true} threePosition={true}  height="h-[547px]" >
+	<!--	<Wrapper   one={false}  three={true} onePosition={true} threePosition={true}  height="h-[547px]" >
 
 	</Wrapper>
 		<Wrapper  four={true} one={true} three={true} height="h-[547px]" >
 
-	</Wrapper>
+	</Wrapper>  -->
 	<EmptySpace />
 </Layout>

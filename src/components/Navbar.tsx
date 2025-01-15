@@ -32,7 +32,9 @@ const Navbar = () => {
 
   return (
     <div
-      className={`md:py-[20px]  border-b border-b-[#1C0B451A] fixed ${scrolled ? "bg-white z-[100]" : "bg-transparent"} w-full `}
+      className={`md:py-[20px] z-[100] border-b border-b-[#1C0B451A] fixed ${
+        scrolled ? "bg-white z-[100]" : "bg-transparent"
+      } w-full `}
     >
       <div className="lg:w-[79.1vw] md:flex hidden w-[95vw] h-[40px]  justify-between mx-auto items-center  ">
         <div className=" md:block hidden text-[#121B26] text-[18px] font-semibold leading-[30px] ">
