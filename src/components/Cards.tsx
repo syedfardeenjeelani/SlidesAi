@@ -611,8 +611,8 @@ const Cards = () => {
               style={{ boxShadow: "0px 2px 6px 0px #1F293714" }}
               className={`absolute h-[36px]   bg-white rounded-[25px] transition-all duration-300 ease-in-out transform ${
                 isYearly
-                  ? "translate-x-full w-[145px] left-[-3vw]"
-                  : "translate-x-0 w-[100px] "
+                  ? "translate-x-full w-[130px] sm:w-[145px] left-[-3vw]"
+                  : "translate-x-0 w-[100px] sm:w-[100px] "
               }`}
             />
 

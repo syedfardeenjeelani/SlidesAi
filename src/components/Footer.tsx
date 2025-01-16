@@ -11,6 +11,7 @@ const Footer = () => {
           <div className=" flex gap-[24px] ">
             <svg
               width="24"
+              className=" cursor-pointer "
               height="25"
               viewBox="0 0 24 25"
               fill="none"
@@ -26,6 +27,7 @@ const Footer = () => {
             <svg
               width="24"
               height="25"
+              className=" cursor-pointer "
               viewBox="0 0 24 25"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -50,6 +52,7 @@ const Footer = () => {
             <svg
               width="24"
               height="25"
+              className=" cursor-pointer "
               viewBox="0 0 24 25"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -78,6 +81,7 @@ const Footer = () => {
             <svg
               width="24"
               height="25"
+              className=" cursor-pointer "
               viewBox="0 0 24 25"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -260,7 +264,7 @@ const Footer = () => {
         </div>
       </div>
       <div className=" lg:h-[322.41px]  flex justify-between gap-[64px] items-center flex-col border-t border-t-[#E3E8EF] ">
-        <div className="flex mt-[48px] justify-center  ">
+        <div className="flex mt-[48px] lg:mb-0 mb-2 justify-center  ">
           <span className="text-[#838E9E]  text-center">
             Copyright 2024 © SuperMetrics.com
           </span>
