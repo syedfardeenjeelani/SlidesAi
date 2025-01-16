@@ -4,7 +4,7 @@ const Hero = () => {
   const svg = (
     <svg 
       viewBox="0 0 628 490"
-      className=" lg:w-[628px] w-[80%] h-[80%] lg:h-[490px] "
+      className=" lg:w-[628px] w-[85%] h-[85%] lg:h-[490px] "
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >

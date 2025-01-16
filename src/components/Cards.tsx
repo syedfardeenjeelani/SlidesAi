@@ -1,8 +1,20 @@
-import React, { useState } from "react";
-
+import React, { useState, type JSX } from "react";
+type CardData = {
+  plan: string;
+  description: string;
+  price: number;
+  button: {
+    text: string;
+    style: string;
+  };
+  featureIcon: JSX.Element;
+  features: string[];
+  icon: JSX.Element;
+  badge: string | null;
+};
 const Cards = () => {
   const [isYearly, setIsYearly] = useState(false);
-  const cardsData = [
+  const cardsData : CardData[] = [
     {
       plan: "Free",
       description: "To grow referrals and leads of business looking",
@@ -631,9 +643,9 @@ const Cards = () => {
         </div>
       </div>
       <div className="flex lg:flex-row flex-col  mb-[16px] gap-[16px] ">
-        {cardsData.map((el, index) => {
+        {cardsData.map((el : CardData  , index : number) => {
           return (
-            <div
+            <div key={index}
               style={{
                 background: el.badge
                   ? "linear-gradient(180deg, #EDF4FF 0%, rgba(237, 244, 255, 0) 33.17%)"

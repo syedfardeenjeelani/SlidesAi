@@ -3,16 +3,15 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null);
-  const [scrolled, setScrolled] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false); 
+    const [activeDropdown, setActiveDropdown] = useState<string | null>(null); 
+    const [scrolled, setScrolled] = useState<boolean>(false); 
 
-  const navItems: any = {
-    Feature: ["Analytics", "Automation", "Collaboration", "Security"],
-    Resources: ["Documentation", "Guides", "Tutorials", "Blog"],
-    Company: ["About", "Careers", "Press", "Contact"],
-  }; 
-
+    const navItems: Record<string, string[]> = {
+      Feature: ["Analytics", "Automation", "Collaboration", "Security"],
+      Resources: ["Documentation", "Guides", "Tutorials", "Blog"],
+      Company: ["About", "Careers", "Press", "Contact"],
+    };
 
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -22,13 +21,12 @@ const Navbar = () => {
       }
     };
 
-    useEffect(() => { 
-      window.addEventListener("scroll", handleScroll); 
+    useEffect(() => {
+      window.addEventListener("scroll", handleScroll);
       return () => {
         window.removeEventListener("scroll", handleScroll);
       };
     }, []);
-
 
   return (
     <div

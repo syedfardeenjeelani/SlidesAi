@@ -29,9 +29,9 @@ const FAQAccordion = () => {
     },
   ];
 
-  const [activeIndex, setActiveIndex] :any = useState(0);
+  const [activeIndex, setActiveIndex]: any = useState(0);
 
-  const toggleAccordion = (index:any) => {
+  const toggleAccordion = (index:number  | null) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
