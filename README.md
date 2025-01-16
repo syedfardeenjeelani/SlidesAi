@@ -1,6 +1,6 @@
 ## Note
 
-Due to some upcoming interviews, I did not had enough time to keep all the SVGs in a seperate folder and to follow some of  the best practices.
+Due to some upcoming interviews, I did not had enough time to keep all the SVGs in a seperate folder and to follow some of  the best practices but i have tried my best to keep the code clean and maintainable.
 
 ## Demo Videos
 
