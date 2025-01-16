@@ -1,11 +1,17 @@
 ## Note
 
-Due to an upcoming interviews, I did not had enough time to keep all the SVGs in a seperate folder.
+Due to some upcoming interviews, I did not had enough time to keep all the SVGs in a seperate folder and to follow some of  the best practices.
 
 ## Demo Videos
 
-- **Mobile Demo**: [Link to Mobile Demo Video]
-- **Laptop Demo**: [Link to Laptop Demo Video]
+- **Mobile Demo**: [[Link to Mobile Demo Video]](https://github.com/user-attachments/assets/99fc579c-2af1-454f-9dce-8fdc471083dd)
+- **Laptop Demo**: https://github.com/user-attachments/assets/f4cb7d76-3aa8-401d-a345-8ef8448db07a
+
+
+
+
+
+
 
 These demo videos showcase how the application performs on mobile and laptop screens, demonstrating its responsiveness and smooth animations.
 
